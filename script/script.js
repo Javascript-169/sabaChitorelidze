@@ -15,3 +15,22 @@ function fahrenheit(x) {
   console.log(value);
 
 
+let minRange = Number(prompt(`შეიყვანეთ მინიმალური დიაპაზონი`));
+let maxRange = Number(prompt(`შეიყვანეთ მაქსიმალური დიაპაზონი`));
+let resultRange = Number(prompt(`შეიყვანეთ რიცხვი`));
+
+function range(minRange, maxRange, resultRange) {
+    if (resultRange >= minRange && resultRange <= maxRange) {
+        return `რიცხვი ${resultRange} არის დიაპაზონში`;
+    } else {
+        return `რიცხვი ${resultRange} არის დიაპაზონის გარეთ`;
+    }
+}
+
+let result = range(minRange, maxRange, resultRange);
+
+console.log(result);
+
+
+
+
