@@ -4,3 +4,14 @@ function square(x) {
 }
 
 square(4);
+
+
+function fahrenheit(x) {
+    return ` ${(x * 9/5) + 32}°F`;
+  };
+
+  let value = fahrenheit(1);
+
+  console.log(value);
+
+
