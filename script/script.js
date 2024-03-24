@@ -53,3 +53,31 @@ function checkYear() {
 let year = checkYear();
 
 console.log(year);
+
+
+//დავალება 5
+
+let num1 = prompt("შეიყვანეთ რიცხვი");
+let action = prompt ("შეიყვანეთ მოქმედება + - * /");
+let num2 = prompt("შეიყვანეთ მეორე რიცხვი");
+
+num1 = Number(num1);
+num2 = Number(num2);
+
+
+function calculator() {
+    if (action === "+"){ 
+    return num1 + num2;
+    }else if (action === "-") {
+      return  num1 - num2;
+    }else if (action === "*") {
+      return num1 * num2;
+    }else if (action === "/") {
+      return  num1 / num2;
+    } else (action !== "+" || "-" || "*" && "/")
+      return "დაფიქსრიდა შეცდომა";
+};
+
+let resultCalculator = calculator();
+
+console.log(resultCalculator);
