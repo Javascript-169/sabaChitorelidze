@@ -1,9 +1,10 @@
-let photo = document.querySelector(".photo");
+let h1 = document.querySelector("h1");
+let h2 = document.querySelector("h2");
+let span = document.querySelector("span");
 
-function zoomIn() { 
-    photo.style.width = "1000px";
-};
-
-function zoomOut() {
-    photo.style.width = "500px";
-};
+window.addEventListener("DOMContentLoaded", () => {
+    h1.style.color = "Blue";
+    h2.style.backgroundColor = "Blue";
+    h2.style.color = "white";
+    span.style.fontSize = "200%";
+});

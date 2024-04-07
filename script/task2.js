@@ -1,25 +1,13 @@
-let text = document.querySelector(".RedClick");
-let redText = "Pink";
+let special = document.getElementById("special");
+let alertInfo = document.querySelectorAll(".alert");
+let alertStop = document.querySelector(".stop");
+let alertGo = document.querySelector(".go");
 
-let text2 = document.querySelector(".BlueClick");
-let blueText = "brown"
-
-let text3 = document.querySelector(".GreenClick");
-let greenText = "Black"
-
-
-function Red() {
-    text.style.color = redText;
-    text.textContent = redText;
-};
-
-function Blue() {
-    text2.style.color = blueText;
-    text2.textContent = blueText;
-}
-
-function Green() {
-    text3.style.color = greenText;
-    text3.textContent = greenText;
-}
-
+window.addEventListener("DOMContentLoaded", () => {
+    special.style.backgroundColor = "Yellow";
+    alertInfo.forEach((span) => {
+        span.style.border = "1px solid gray";
+    })
+    alertStop.style.backgroundColor = "red";
+    alertGo.style.backgroundColor = "green";
+});
