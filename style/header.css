@@ -7,10 +7,10 @@
 
 
 .header-container {
-    display: grid;
-    grid-template-areas: 'title search search search search search search search search search search search search';
-    align-items: center;
     width: 100%;
+    display: grid;
+    grid-template-areas: 'title search search search search search search search search search search ';
+    align-items: center;
     padding: 10px;
     background-color: #03A9F4;
     font-family: "Liberation Mono", "Courier New", monospace;
@@ -28,19 +28,36 @@
 }
 
 .search-container {
+    position: relative;
+    top: 0;
+    width: 100%;
     grid-area: search;
 }
+
 
 #search {
     width: 90%;
     outline: none;
     border-style: none;
-    background: transparent url("/images/544-5441418_search-icon-svg-white-hd-png-download-removebg-preview.png") no-repeat 10px;
     background-size: 20px;
     background-color: rgb(77, 171, 245);
-    padding: 9px 4px 9px 50px;
+    padding: 12px 4px 12px 50px;
 }
 
+.search-container i {
+    position: absolute;
+    top: 50%;
+    left: 1.5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
 #search::placeholder {
     color: #FFFFFF;
 }
+
+#search:focus::placeholder {
+    color: #717070;
+    transition: 0.5s;
+}
+
+

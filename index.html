@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <header>
@@ -12,8 +13,10 @@
             <div class="title-container">
                 <a href="./index.html" id="titleText">Srulad.Com</a>
             </div>
-            <div class="search-container">
-                <input id="search" type="text" placeholder="მოძებნე ფილმი" onfocus="searchFunction()">
+            <div class="search-container" onfocus="searchLoop()">
+                <i id="searchLoop" class="fa-solid fa-magnifying-glass" style="color: white; display:block;" ></i>
+                <i class="fa-solid fa-arrow-left" style="display: none; color: #717070;" id="arrow"></i>
+                <input id="search" type="text" placeholder="მოძებნე ფილმი" autocomplete="off" >
             </div>
         </div>
     </header>
