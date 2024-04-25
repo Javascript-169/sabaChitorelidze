@@ -5,15 +5,12 @@ function saveData() {
     password = document.getElementById("password").value;
     
 
-    // localStorage.setItem("name", name);
-    // localStorage.setItem("email", email);
-    // localStorage.setItem("password", password);
-
     let RegUsers = new Array();
     RegUsers = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
     if(RegUsers.some((v) => {
         return  v.email == email
     })) {
+        window.location.href = "login.html"
         alert("You are already registered")
     }
     else {
@@ -25,3 +22,4 @@ function saveData() {
         localStorage.setItem("users", JSON.stringify(RegUsers));
     }
 }
+
