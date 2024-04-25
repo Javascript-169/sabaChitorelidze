@@ -1,19 +1,27 @@
-let button = document.querySelector('.button');
-let inputValue = document.querySelector('.inputValue');
-let temp = document.querySelector('.temp');
-let desc = document.querySelector('.desc');
+function saveData() {
+    let name, email, password;
+    name = document.getElementById("name").value;
+    email = document.getElementById("email").value;
+    password = document.getElementById("password").value;
+    
 
-button.addEventListener('click', function(){
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}&units=metric&appid=108dd9a67c96f23039937fe6f3c91963`)
-    .then(response => response.json())
-    .then(
-        displayData)
-        .catch(() => alert('ქალაქი არ მოიძებნა'));
-})
+    // localStorage.setItem("name", name);
+    // localStorage.setItem("email", email);
+    // localStorage.setItem("password", password);
 
-const displayData=(weather)=>{
-    temp.innerText=`${weather.main.temp}°C`
-    desc.innerText=`${weather.weather[0].description}`
+    let RegUsers = new Array();
+    RegUsers = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+    if(RegUsers.some((v) => {
+        return  v.email == email
+    })) {
+        alert("You are already registered")
+    }
+    else {
+        RegUsers.push({
+            "name":name,
+            "email":email,
+            "password":password
+        })
+        localStorage.setItem("users", JSON.stringify(RegUsers));
+    }
 }
-
-console.log(fetch);
