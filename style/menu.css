@@ -71,6 +71,7 @@
     color: #868e96;
 }
 
+
 .homeMenu {
     display: flex;
     justify-content: left;
@@ -80,17 +81,16 @@
     padding: 10px;
 }
 
+
 .homeMenu:hover {
     background-color: #f8fcff;
     cursor: pointer;
     font-weight: bold;
 }
-.homeMenu:visited {
-    background-color: blue;
-    cursor: pointer;
-    font-weight: bold;
-}
 
+.selected {
+    color: blue;
+}
 .filmMenu {
     display: flex;
     justify-content: left;
