@@ -1,0 +1,152 @@
+.menu {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'autho'
+    'navMenu'
+    'navMenu'
+    'navMenu'
+    'navMenu'
+    'navMenu'
+    'navMenu'
+    'navMenu'
+    'navMenu'
+    'navMenu';
+    position: fixed;
+    /* background-color: antiquewhite; */
+}
+
+.authorization {
+    grid-area: autho;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+
+.authorization:hover {
+    background-color: #f8fcff;
+    cursor: pointer;
+}
+
+.authText {
+    font-size: 12px;
+    margin-right: 75px;
+    color: #000000;
+}
+
+.authText2 {
+    font-size: 12px;
+    margin-right: 50px;
+    margin-top: 3px;
+    color: #868e96;
+}
+
+#authPhoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-left: 40px;
+}
+
+.navMenu {
+    grid-area: navMenu;
+    display: flex;
+    flex-direction: column;
+    /* background-color: tomato; */
+    height: 40%;
+    gap: 10px;
+}
+
+.navMenu a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #868e96;
+}
+
+.homeMenu {
+    display: flex;
+    justify-content: left;
+    width: 75%;
+    align-items: center;
+    margin-left: 12%;
+    padding: 10px;
+}
+
+.homeMenu:hover {
+    background-color: #f8fcff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.homeMenu:visited {
+    background-color: blue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.filmMenu {
+    display: flex;
+    justify-content: left;
+    width: 75%;
+    align-items: center;
+    margin-left: 12%;
+    padding: 10px;
+}
+
+.filmMenu:hover {
+    background-color: #f8fcff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.seriesMenu {
+    display: flex;
+    justify-content: left;
+    width: 75%;
+    align-items: center;
+    margin-left: 12%;
+    padding: 10px;
+}
+
+.seriesMenu:hover {
+    background-color: #f8fcff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.animeMenu {
+    display: flex;
+    justify-content: left;
+    width: 75%;
+    align-items: center;
+    margin-left: 12%;
+    padding: 10px;
+}
+
+.animeMenu:hover {
+    background-color: #f8fcff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.blogMenu {
+    display: flex;
+    justify-content: left;
+    width: 75%;
+    align-items: center;
+    margin-left: 12%;
+    padding: 10px;
+}
+
+.blogMenu:hover {
+    background-color: #f8fcff;
+    cursor: pointer;
+    font-weight: bold;
+}

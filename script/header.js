@@ -1,5 +1,3 @@
-
-
 const searchInput = document.querySelector('#search');
 searchInput.addEventListener('focus', (e) => {
     let searchIcon = document.getElementById("searchLoop");
