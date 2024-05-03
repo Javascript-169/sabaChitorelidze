@@ -31,7 +31,7 @@
 
 
 .authorization:hover {
-    background-color: #f8fcff;
+    background-color: #e6eaeb;
     cursor: pointer;
 }
 
@@ -83,7 +83,7 @@
 
 
 .homeMenu:hover {
-    background-color: #f8fcff;
+    background-color: #e6eaeb;
     cursor: pointer;
     font-weight: bold;
 }
@@ -101,7 +101,7 @@
 }
 
 .filmMenu:hover {
-    background-color: #f8fcff;
+    background-color: #e6eaeb;
     cursor: pointer;
     font-weight: bold;
 }
@@ -116,7 +116,7 @@
 }
 
 .seriesMenu:hover {
-    background-color: #f8fcff;
+    background-color: #e6eaeb;
     cursor: pointer;
     font-weight: bold;
 }
@@ -131,7 +131,7 @@
 }
 
 .animeMenu:hover {
-    background-color: #f8fcff;
+    background-color: #e6eaeb;
     cursor: pointer;
     font-weight: bold;
 }
@@ -146,7 +146,11 @@
 }
 
 .blogMenu:hover {
-    background-color: #f8fcff;
+    background-color: #e6eaeb;
     cursor: pointer;
     font-weight: bold;
 }
+
+.blue {
+    color: #03A9F4;
+  }
