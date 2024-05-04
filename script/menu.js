@@ -1,7 +1,3 @@
-let homeMenu = document.querySelector(".homeMenu");
-let main = document.querySelector(".main");
-
-
 const divs = document.querySelectorAll('.active');
 
 divs.forEach(el => {
@@ -17,5 +13,4 @@ divs.forEach(el => {
       child.classList.toggle('blue');
     });
   });
-  console.log();
 });
