@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/menu.css">
+    <link rel="stylesheet" href="./style/filter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -60,7 +61,7 @@
                 <ul>
                     <li><i class="fa-solid fa-filter"></i><span> ფილტრი:</span></li>
                     <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">ჟანრი <i class="fa-solid fa-chevron-down"></i></a>
+                        <a href="javascript:void(0)" class="dropbtn" style="text-decoration: none;">ჟანრი <i class="fa-solid fa-chevron-down"></i></a>
                         <div class="dropdown-content">
                             <div><input type="checkbox" style="cursor: pointer;"> <span>ანიმაციური</span></div>
                             <div><input type="checkbox" style="cursor: pointer;"> <span>ბიოგრაფიული</span></div>
@@ -84,13 +85,46 @@
                             <div><input type="checkbox" style="cursor: pointer;"> <span>ფენტეზი</span></div>
                         </div>
                     </li>
-                    <li>კატეგორია <i class="fa-solid fa-chevron-down"></i></li>
-                    <li>წელი <i class="fa-solid fa-chevron-down"></i></li>
-                    <li>IMDB რეიტინგი <i class="fa-solid fa-chevron-down"></i></li>
+                         <li class="dropdown2">
+                            <a href="javascript:void(0)" class="dropbtn2" style="text-decoration: none;">კატეგორია <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown-content2">
+                                <div><input type="checkbox" style="cursor: pointer;"> <span>ფილმები</span></div>
+                                <div><input type="checkbox" style="cursor: pointer;"> <span>სერიალები</span></div>
+                            </div>
+                        </li>
+                    <li class="dropdown3">
+                        <a href="javascript:void(0)" class="dropbtn3" style="text-decoration: none;">წელი <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-content3">
+                            <div class="yearsSearch">
+                                <div>
+                                    <input name="min" class="um-filter" data-filter="year_from" min="1" max="9999" type="text" value>
+                                    <span>-დან</span>
+                                </div>
+                                <div>
+                                    <input name="min" class="um-filter" data-filter="year_to" min="1" max="9999" type="text" value>
+                                    <span>-მდე</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown4">
+                        <a href="javascript:void(0)" class="dropbtn4" style="text-decoration: none;">IMDB რეიტინგი <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-content4">
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>10k-ზე მეტი ხმით</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>9.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>8.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>7.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>6.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>5.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>4.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>3.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>2.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>1.0 დან მეტი</span></div>
+                        </div>
+                    </li>
                   </ul>
             </div>
         </div>
-
         <!-- <div class="slide-container">
             <div class="slide-content">
                 <div class="card-wrapper">

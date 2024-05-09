@@ -10,7 +10,6 @@ searchInput.addEventListener('focus', (e) => {
     searchIcon.style.display = "none";
     arriwIcon.style.display = "block"
 },
-true
 );
 
 searchInput.addEventListener(
@@ -19,11 +18,17 @@ searchInput.addEventListener(
         let searchIcon = document.getElementById("searchLoop");
         let arriwIcon = document.getElementById("arrow");
         e.target.style.background = "";
-        searchIcon.style.display = "block"
-        arriwIcon.style.display = "none"
+        searchIcon.style.display = "block";
+        arriwIcon.style.display = "none";
     },
-    true
 );
+;
+
+() => {
+    if(searchInput.value === ``) {
+        alert("s")
+    }
+}
 
 
 
