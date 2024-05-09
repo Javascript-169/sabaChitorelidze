@@ -189,6 +189,7 @@ ul {
   }
 
   .dropdown-content4 div:hover {
+    background-color: #d0d2d2;
     cursor:default;
     color: #000000;
   }

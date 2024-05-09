@@ -68,7 +68,6 @@ main::after {
     grid-area: navMenu;
     display: flex;
     flex-direction: column;
-    /* background-color: tomato; */
     height: 40%;
     gap: 10px;
 }
@@ -78,8 +77,15 @@ main::after {
     margin-left: 10px;
     font-size: 15px;
     color: #868e96;
+    width: 100%;  
+    padding: 7px;
 }
 
+
+.navMenu a:is(:link, :active, :visited).active {
+    color: #03A9F4;
+    transition: 0.5s;
+}
 
 .homeMenu {
     display: flex;
@@ -160,9 +166,6 @@ main::after {
     font-weight: bold;
 }
 
-.blue {
-    color: #03A9F4;
-  }
 
 
 

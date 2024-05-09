@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/menu.css">
+    <link rel="stylesheet" href="./style/filter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="title-container">
+                <a href="./home.html" id="titleText">Srulad.Com</a>
+            </div>
+            <div class="search-container">
+                <div class="iconDiv">
+                    <i id="searchLoop" class="fa-solid fa-magnifying-glass" style="color: white; display:block;"></i>
+                    <i class="fa-solid fa-arrow-left" style="display: none; color: #717070;" id="arrow"></i>
+                </div>
+                <input id="search" type="text" placeholder="მოძებნე ფილმი" autocomplete="off">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="menu">
+            <div class="authorization">
+                <img src="./images/profile-noavatar.jpg" alt="Image" id="authPhoto">
+                <div>
+                    <p class="authText">გაიარეთ</p>
+                    <p class="authText2">ავტორიზაცია</p>
+                </div>
+            </div>
+
+            <div class="navMenu">
+                <div class="homeMenu">
+                    <a href="./home.html" class=""><i class="fa-solid fa-house"></i><span style="margin-left: 10px;">მთავარი</span></a>
+                </div>
+                <div class="filmMenu">
+                    <a href="/movies.html" class=""><i class="fa-solid fa-clapperboard "></i><span style="margin-left: 10px;">ფილმები</span></a>
+                </div>
+                <div class="seriesMenu">
+                    <a href="./series.html" class=""><i class="fa-solid fa-film "></i> <span style="margin-left: 10px;">სერიალები</span></a>
+                </div>
+                <div class="animeMenu">
+                    <a href="./anime.html" class=""><i class="fa-solid fa-fan "></i><span style="margin-left: 10px;">ანიმაციური ფილმები</span></a>
+                </div>
+                <div class="blogMenu">
+                    <a href="./blog.html" class=""><i class="fa-solid fa-rss "></i><span style="margin-left: 10px;">ბლოგი</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-container">
+            <div class="filterMenu">
+                <ul>
+                    <li><i class="fa-solid fa-filter"></i><span> ფილტრი:</span></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn" style="text-decoration: none;">ჟანრი <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>ანიმაციური</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>ბიოგრაფიული</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>დეტექტივი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>დოკუმენტური</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>დრამა</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>ეროტიული</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>ვესტერნი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>ისტორიული</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>კომედია</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>კრიმინალური</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>მელოდრამა</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>მისტიკა</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>მუსიკალური</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>მძაფრ-სიუჟეტიანი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>სათავგადასავლო</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>საშინელება</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>სპორტული</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>ტრილერი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>ფანტასტიკა</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>ფენტეზი</span></div>
+                        </div>
+                    </li>
+                         <li class="dropdown2">
+                            <a href="javascript:void(0)" class="dropbtn2" style="text-decoration: none;">კატეგორია <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown-content2">
+                                <div><input type="checkbox" style="cursor: pointer;"> <span>ფილმები</span></div>
+                                <div><input type="checkbox" style="cursor: pointer;"> <span>სერიალები</span></div>
+                            </div>
+                        </li>
+                    <li class="dropdown3">
+                        <a href="javascript:void(0)" class="dropbtn3" style="text-decoration: none;">წელი <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-content3">
+                            <div class="yearsSearch">
+                                <div>
+                                    <input name="min" class="um-filter" data-filter="year_from" min="1" max="9999" type="text" value>
+                                    <span>-დან</span>
+                                </div>
+                                <div>
+                                    <input name="min" class="um-filter" data-filter="year_to" min="1" max="9999" type="text" value>
+                                    <span>-მდე</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown4">
+                        <a href="javascript:void(0)" class="dropbtn4" style="text-decoration: none;">IMDB რეიტინგი <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="dropdown-content4">
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>10k-ზე მეტი ხმით</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>9.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>8.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>7.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>6.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>5.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>4.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>3.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>2.0 დან მეტი</span></div>
+                            <div><input type="checkbox" style="cursor: pointer;"> <span>1.0 დან მეტი</span></div>
+                        </div>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+        <!-- <div class="slide-container">
+            <div class="slide-content">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="image-contet">
+                            <span class="overlay">
+                                <div class="card-image">
+                                    <img src="./images/sliderImage/cityofGod.jpg" alt="Image" class="card-image">
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="./script/header.js"></script>
+    <script src="./script/menu.js"></script>
+</body>
+
+</html>
