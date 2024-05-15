@@ -29,7 +29,7 @@
 
     <main>
         <div class="menu">
-            <div class="authorization">
+            <div class="authorization" data-modal-target="#signIn">
                 <img src="./images/profile-noavatar.jpg" alt="Image" id="authPhoto">
                 <div>
                     <p class="authText">გაიარეთ</p>
@@ -55,6 +55,19 @@
                 </div>
             </div>
         </div>
+
+        <div class="authorizationDiv">
+            <div class="signIn activeS" id="signIn">
+                <button data-close-button class="close-button">&times;X</button>
+                <p id="singAuthorization">გაიარე ავტორიზაცია</p>
+                <p id="textAuthorization">საიტის სრული ფუნქციონალის გამოსაყენებლად გთხოვთ გაიაროთ ავტორიზაცია</p>
+               <div class="btnDiv">
+                    <button id="authorizationBtn">ავტორიზაცია</button>
+                    <button id="registrationBtn">რეგისტრაცია</button>
+                </div>
+            </div>
+        </div>
+        <div class="activeS" id="overlay"> </div>
 
         <!-- <div class="slide-container">
             <div class="slide-content">
