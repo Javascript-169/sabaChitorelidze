@@ -1,11 +1,10 @@
 const windowPathname = window.location.pathname;
 const navLinks = document.querySelectorAll('.navMenu a');
 const authorization = document.querySelector(`.authorization`);
-const signIn = document.querySelector(`.signIn`);
-const close = document.getElementById("close");
 
-const openModalButtons = document.querySelectorAll('[data-modal-target]');
-const closeModalButtons = document.querySelectorAll('[data-close-button]');
+
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
 
@@ -27,7 +26,7 @@ openModalButtons.forEach(button => {
 })
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.activeS')
+  const modals = document.querySelectorAll('.modal.active')
   modals.forEach(modal => {
     closeModal(modal)
   })
@@ -36,18 +35,18 @@ overlay.addEventListener('click', () => {
 closeModalButtons.forEach(button => {
   button.addEventListener('click', () => {
     const modal = button.closest('.modal')
-    closeModalModal(modal)
+    closeModal(modal)
   })
 })
 
 function openModal(modal) {
-  if (modal === null) return
-  modal.classList.add('activeS')
-  overlay.classList.add('activeS')
+  if (modal == null) return
+  modal.classList.add('actives')
+  overlay.classList.add('actives')
 }
 
 function closeModal(modal) {
-  if (modal === null) return
-  modal.classList.remove('activeS')
-  overlay.classList.remove('activeS')
+  if (modal == null) return
+  modal.classList.remove('actives')
+  overlay.classList.remove('actives')
 }

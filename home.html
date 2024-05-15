@@ -28,7 +28,7 @@
 
     <main>
         <div class="menu">
-            <div class="authorization">
+            <div class="authorization" data-modal-target="#modal">
                 <img src="./images/profile-noavatar.jpg" alt="Image" id="authPhoto">
                 <div>
                     <p class="authText">გაიარეთ</p>
@@ -54,6 +54,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">გაიარე ავტორიზაცია</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="textAutho">საიტის სრული ფუნქციონალის გამოსაყენებლად გთხოვთ გაიაროთ ავტორიზაცია</p>
+                <div class="btnAutho">
+                    <button>ავტორიზაცია</button>
+                    <button>რეგისტრაცია</button>
+                </div>
+            </div>
+          </div>
+          <div id="overlay"></div>
     </main>
 
     <footer>

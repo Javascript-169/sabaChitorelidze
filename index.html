@@ -29,7 +29,7 @@
 
     <main>
         <div class="menu">
-            <div class="authorization" data-modal-target="#signIn">
+            <div class="authorization" data-modal-target="#modal">
                 <img src="./images/profile-noavatar.jpg" alt="Image" id="authPhoto">
                 <div>
                     <p class="authText">გაიარეთ</p>
@@ -55,35 +55,22 @@
                 </div>
             </div>
         </div>
-
-        <div class="authorizationDiv">
-            <div class="signIn activeS" id="signIn">
-                <button data-close-button class="close-button">&times;X</button>
-                <p id="singAuthorization">გაიარე ავტორიზაცია</p>
-                <p id="textAuthorization">საიტის სრული ფუნქციონალის გამოსაყენებლად გთხოვთ გაიაროთ ავტორიზაცია</p>
-               <div class="btnDiv">
-                    <button id="authorizationBtn">ავტორიზაცია</button>
-                    <button id="registrationBtn">რეგისტრაცია</button>
+        
+        <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">გაიარე ავტორიზაცია</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="textAutho">საიტის სრული ფუნქციონალის გამოსაყენებლად გთხოვთ გაიაროთ ავტორიზაცია</p>
+                <div class="btnAutho">
+                    <button>ავტორიზაცია</button>
+                    <button>რეგისტრაცია</button>
                 </div>
             </div>
-        </div>
-        <div class="activeS" id="overlay"> </div>
+          </div>
+          <div id="overlay"></div>
 
-        <!-- <div class="slide-container">
-            <div class="slide-content">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="image-contet">
-                            <span class="overlay">
-                                <div class="card-image">
-                                    <img src="./images/sliderImage/cityofGod.jpg" alt="Image" class="card-image">
-                                </div>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </main>
 
     <footer>
