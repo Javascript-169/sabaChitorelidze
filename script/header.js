@@ -24,11 +24,6 @@ searchInput.addEventListener(
 );
 ;
 
-() => {
-    if(searchInput.value === ``) {
-        alert("s")
-    }
-}
 
 
 

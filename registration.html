@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>რეგისტრაცია</title>
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/menu.css">
     <link rel="stylesheet" href="./style/filter.css">
+    <link rel="stylesheet" href="./style/registration.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -71,6 +72,34 @@
           </div>
           <div id="overlay"></div>
 
+          <div class="registration-container">
+            <form action="" id="form">
+                <div class="box">
+                    <label for="username">მომხმარებლის სახელი:</label>
+                    <input type="text" name="username" id="username">
+                    <div class="error"></div>
+                </div>
+                <div class="box">
+                    <label for="email">ელ-ფოსტა:</label>
+                    <input type="email" name="email" id="email">
+                    <div class="error"></div>
+                </div>
+                <div class="box">
+                    <label for="password">პაროლი:</label>
+                    <input type="password" name="password" id="password">
+                    <div class="error"></div>
+                </div>
+                <div class="box">
+                    <label for="password">დაადასტურე პაროლი:</label>
+                    <input type="password" name="psw" id="psw">
+                    <div class="error"></div>
+                </div>
+                <button class="btn" type="submit">რეგისტრაცია</button>
+                <div class="link">
+                    <a href="./login.html">უკვე გააქვთ ანგარიში?</a>
+                </div>
+            </form>
+          </div>
     </main>
 
     <footer>
@@ -80,6 +109,7 @@
     <script src="./script/header.js"></script>
     <script src="./script/menu.js"></script>
     <script src="./script/movies.js"></script>
+    <script src="./script/registration.js"></script>
 </body>
 
 </html>

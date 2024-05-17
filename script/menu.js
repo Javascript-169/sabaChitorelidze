@@ -50,3 +50,5 @@ function closeModal(modal) {
   modal.classList.remove('actives')
   overlay.classList.remove('actives')
 }
+
+
